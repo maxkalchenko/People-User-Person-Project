@@ -1,0 +1,9 @@
+<div class="panel panel-default">
+	<div class="panel-body">
+	  <user-pic-large person-info="$ctrl.personInfo"></user-pic-large>
+			<!-- filter from peopleList .module('userTest', ['peopleList']) -->
+		<h3>{{$ctrl.personInfo.firstName | Capitalize}} {{$ctrl.personInfo.lastName | Capitalize}} {{$ctrl.personInfo.age}}</h3>
+		<i>{{$ctrl.personInfo.loremIpsum}}</i>
+		<br><br>{{$ctrl.personInfo.email}}
+	</div>
+</div>

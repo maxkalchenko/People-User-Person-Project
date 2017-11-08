@@ -1,0 +1,29 @@
+	[{
+		"firstName": "Sashko",
+		"lastName": "Suprun",
+		"age": 17,
+		"email": "osu@ciklum.com",
+		"sex": "male",
+		"loremIpsum": "Praesent ac fermentum enim. Suspendisse at augue in neque interdum malesuada. Donec at magna eu arcu lobortis fringilla. Suspendisse vitae massa vel tortor vehicula volutpat a at nunc. Integer vel congue orci. Morbi est tortor, sollicitudin eget condimentum viverra, consequat vel neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+	}, {
+		"firstName": "Amalia",
+		"lastName": "Raiskaya",
+		"age": 15,
+		"email": "amalia.raiskaya@cbsinteractive.com",
+		"sex": "female",
+		"loremIpsum": "Integer accumsan nisi in sollicitudin pretium. Proin at auctor leo. Ut auctor neque non ornare viverra. Nullam vel rutrum ex. Nunc viverra, erat in auctor iaculis, nisl risus consequat mi, elementum scelerisque leo lectus a justo. Suspendisse consequat, dui at accumsan consequat, magna lorem auctor libero, sit amet laoreet quam nisl vel massa. Vestibulum accumsan in leo nec porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vel quam ultrices, faucibus ex fringilla, pretium nunc. Donec et porta tortor."
+	}, {
+		"firstName": "Eliot",
+		"lastName": "Pattern",
+		"age": 13,
+		"email": "elpattern@yandex.ru",
+		"sex": "male",
+		"loremIpsum": "Praesent posuere, lorem vitae eleifend molestie, risus nisi hendrerit elit, ac venenatis nisi felis non sapien. Donec ac lectus et lectus tristique pretium ut a odio. Nulla laoreet diam eros, in rutrum tortor iaculis vitae. Aenean eleifend auctor massa. Nulla vitae justo lacinia, posuere sapien ac, venenatis ante. Nulla id aliquam lectus. In ultrices ac ligula mollis dapibus. In nec justo vel mauris pharetra laoreet varius sed eros. Aenean placerat dignissim nunc, eu laoreet mauris cursus eu. Donec condimentum nibh eu lacus tincidunt, sit amet vestibulum nulla efficitur. Vestibulum suscipit metus a elementum fermentum. Aliquam non tortor suscipit, pellentesque justo a, finibus mi. Donec eleifend commodo ipsum, ut ullamcorper neque feugiat a. In placerat dui vitae neque consequat accumsan. Nam suscipit ipsum sit amet mauris interdum rutrum. Pellentesque convallis, risus ac vulputate fringilla, ligula ante gravida urna, eu tincidunt ligula mi sit amet sapien."
+	}, {
+		"firstName": "Mark",
+		"lastName": "Kalchenko",
+		"age": 3,
+		"email": "mark.kalchenko@gmail.com",
+		"sex": "male",
+		"loremIpsum": "Nullam nec mauris at tellus convallis ultrices. Suspendisse sodales et orci ut facilisis. Quisque convallis libero vitae arcu elementum, et porttitor augue condimentum. Aliquam vitae nisi non odio fringilla pulvinar. Vestibulum congue ex nec turpis bibendum gravida. Donec tincidunt ex nibh, quis sodales neque consequat sit amet. Cras tristique est in diam ornare, vel volutpat leo porttitor. Quisque dignissim arcu id nibh laoreet egestas. Vestibulum tincidunt non nulla vel fermentum. Proin nunc nibh, imperdiet id dignissim a, lacinia eget tortor. Donec varius nibh in dignissim ultrices. Aenean ultrices, mauris in consectetur convallis, massa arcu finibus ante, sed scelerisque felis velit nec nulla. Integer dictum, justo et sagittis maximus, dolor nisl euismod lacus, eu porttitor enim libero a sem."
+	}]

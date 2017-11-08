@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en" ng-app="maxkalchenko">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>maxkalchenko</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+
+    <link rel="icon" href="data/favicon.png" type="image/png" sizes="32x32">
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyB2Q5l2424BqiCp1PmtaMi_PU4D47hBgzA"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+    <script src="core/core.module.js"></script>
+    <script src="core/person/person.module.js"></script>
+    <script src="core/person/person.js"></script>
+
+    <script src="people-list/people-list.module.js"></script>
+    <script src="people-list/people-list.js"></script>
+
+    <script src="people-list/person-details/person-details.js"></script>
+    <script src="people-list/widgets/table/table.js"></script>
+    <script src="people-list/widgets/user-pic/user-pic.js"></script>
+    <script src="people-list/filters/capitalize.js"></script>
+
+    <script src="map/map.module.js"></script>
+    <script src="map/map.js"></script>
+
+    <script src="user-test/user-test.module.js"></script>
+    <script src="user-test/user-test.js"></script>
+
+  </head>
+
+  <body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a ui-sref="people">
+                <span class="glyphicon glyphicon-home navbar-brand"></span>
+            </a>
+        </div>
+        <div class="dropdown pull-right">
+            <a ui-sref="map">
+                <span class="glyphicon glyphicon-send navbar-brand"></span>
+            </a>
+        </div>
+    </div>
+  </nav>
+
+  <div class="view-container">
+    <div ui-view class="view-frame"></div>
+  </div>
+
+  </body>
+</html>

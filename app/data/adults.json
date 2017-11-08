@@ -1,0 +1,36 @@
+	[{
+		"firstName": "Maksym",
+		"lastName": "Kalchenko",
+		"age": 24,
+		"email": "maxkalchenko@gmail.com",
+		"sex": "male",
+		"loremIpsum": "Suspendisse pretium lectus non est lobortis condimentum. Suspendisse iaculis mi sed porta dictum. Aenean tellus tortor, facilisis sed dolor id, suscipit pellentesque sapien. Etiam a sagittis urna. Quisque quam nisl, dapibus vitae quam non, dapibus euismod nunc. Nam vestibulum quis turpis et hendrerit. Nam eget rutrum metus. Donec eleifend nisi eget maximus ultricies. Duis eu interdum neque, non porttitor augue. In sodales ut arcu in semper. Curabitur accumsan neque ipsum. Cras enim sapien, tincidunt ut aliquet vitae, dictum et risus. In molestie egestas diam at semper." 
+	}, {
+		"firstName": "Bogdan",
+		"lastName": "Bezpalov",
+		"age": 25,
+		"email": "bbezpalov@mail.ua",
+		"sex": "male",
+		"loremIpsum": "Duis ac consequat eros. Ut a pulvinar metus. Maecenas vitae nunc nec ex pretium pharetra. Proin lacinia ante vel libero luctus, a egestas nulla eleifend. Cras ante mi, imperdiet ac pellentesque id, ultricies vel eros. Vivamus eget imperdiet ante. Maecenas pellentesque arcu urna, eget condimentum nibh bibendum vel. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at risus nec libero volutpat hendrerit."
+	}, {
+		"firstName": "Anton",
+		"lastName": "Paschenko",
+		"age": 31,
+		"email": "apaschenko@gmail.de",
+		"sex": "male",
+		"loremIpsum": "Aliquam vitae sapien at dolor placerat facilisis. Sed felis nunc, pharetra id nibh sed, lobortis porta orci. Fusce pretium mi ac justo hendrerit tempus. Pellentesque eget enim ac mauris viverra mollis in id ante. Quisque pharetra fringilla erat. Curabitur purus ex, dapibus et eros vel, efficitur finibus nibh. Aliquam scelerisque, mauris nec aliquet finibus, tellus metus placerat lorem, in iaculis urna erat vel lectus."
+	}, {
+		"firstName": "Vadim",
+		"lastName": "Kulakov",
+		"age": 24,
+		"email": "vadimkulakov@gmail.com",
+		"sex": "male",
+		"loremIpsum": "Etiam in consequat lacus, eu convallis est. Aenean sodales lacus quis nisl ornare luctus. Nulla fringilla, ante et vulputate lobortis, nulla ligula vestibulum nisl, vitae hendrerit quam quam ut urna. Nullam vestibulum interdum erat vitae dignissim. Integer sit amet eleifend dui. Sed cursus purus quam, non vulputate nisl sodales in. Pellentesque feugiat, nisi vitae facilisis volutpat, enim est vestibulum mi, at varius urna justo non orci. Quisque ligula diam, dapibus sit amet consequat sit amet, commodo eu velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nulla ex, porttitor ut dignissim quis, scelerisque ac justo. Sed feugiat tellus augue, sit amet ultrices nisl tempus a. Donec id diam tellus. Ut tincidunt tellus id mollis rutrum. Nam blandit consectetur varius. Duis ut congue erat. Vivamus tristique iaculis nisi, molestie auctor nisl dictum sed."
+	}, {
+		"firstName": "Taras",
+		"lastName": "Kharovskiy",
+		"age": 29,
+		"email": "takh@ciklum.com",
+		"sex": "male",
+		"loremIpsum": "Sed id ullamcorper est. Proin eget feugiat nisi. Duis lacinia urna vitae dapibus consequat. Fusce magna libero, cursus vel turpis at, lacinia pharetra lectus. Fusce vitae lacus turpis. Morbi ac nibh in lacus tincidunt hendrerit vitae vel risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce lorem tellus, hendrerit sit amet egestas eu, tincidunt id massa. Integer pellentesque scelerisque tellus. Integer rhoncus, massa at sagittis lacinia, eros diam scelerisque felis, et ultricies tellus nisi quis sapien. Vivamus ac euismod turpis. Nullam molestie vestibulum dictum. Quisque scelerisque nulla dui, nec ullamcorper quam varius a."
+	}]

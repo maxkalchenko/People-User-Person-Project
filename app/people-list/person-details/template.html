@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+    <user-pic person-info="$ctrl.personInfo"></user-pic>
+    <button type="button"
+		        class="btn btn-default btn-xs pull-right"
+		        ng-click="$ctrl.onClose()">
+			         <span class="glyphicon glyphicon-remove"></span>
+	  </button>
+    <h3>{{$ctrl.personInfo.firstName + " " + $ctrl.personInfo.lastName}}</h3>
+    <i>{{$ctrl.personInfo.loremIpsum}}</i>
+  </div>
+</div>

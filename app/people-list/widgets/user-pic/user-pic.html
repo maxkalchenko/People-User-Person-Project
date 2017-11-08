@@ -1,0 +1,6 @@
+<img ng-src="{{$ctrl.url}}"
+     ui-sref="userTest({
+       userId: ($ctrl.personInfo.firstName + '-' + $ctrl.personInfo.lastName).toLowerCase(),
+       personInfo: $ctrl.personInfo
+     })"
+     ng-class="{'thumb': !$ctrl.large, 'img': $ctrl.large}"/>

@@ -1,0 +1,33 @@
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname: 
+          <button type="button" class="btn btn-xs sort-button pull-right" ng-click="$ctrl.orderProp='firstName'; reverseSort = !reverseSort">
+            <span class="glyphicon glyphicon-sort"></span>
+          </button>
+        </th>
+        <th>Lastname: 
+          <button type="button" class="btn btn-xs sort-button pull-right" ng-click="$ctrl.orderProp='lastName'; reverseSort = !reverseSort">
+            <span class="glyphicon glyphicon-sort"></span>
+          </button>
+        </th>
+        <th>Age: 
+          <button type="button" class="btn btn-xs sort-button pull-right" ng-click="$ctrl.orderProp='age'; reverseSort = !reverseSort">
+            <span class="glyphicon glyphicon-sort"></span>
+          </button></th>
+        <th>Email: 
+          <button type="button" class="btn btn-xs sort-button pull-right" ng-click="$ctrl.orderProp='email'; reverseSort = !reverseSort">
+            <span class="glyphicon glyphicon-sort"></span>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="person in $ctrl.people | orderBy:$ctrl.orderProp:reverseSort" ng-click="$ctrl.getPerson(person)">
+        <th><span class="glyphicon glyphicon-user"></span> {{person.firstName | Capitalize}}</th>
+        <th>{{person.lastName | Capitalize}}</th>
+        <th>{{person.age}}</th>
+        <th>{{person.email}}</th>
+      </tr>
+    </tbody>
+  </table>

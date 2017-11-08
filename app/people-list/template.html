@@ -1,0 +1,95 @@
+<h2>List of people:</h2>
+
+<p>Adults:</p>
+<table-widget people="$ctrl.adults" person-info="$ctrl.personInfo"></table-widget>
+
+<p>Children:</p>
+<table-widget people="$ctrl.children" person-info="$ctrl.personInfo"></table-widget>
+
+<button type="button"
+		ng-if="!$ctrl.readyToAdd"
+		ng-click="$ctrl.registerPerson()"
+		class="btn btn-default">Register person &emsp; <!-- $ctrl.addPerson(user) -->
+			<span class="glyphicon glyphicon-plus"></span>
+</button>
+
+<form novalidate
+	  ng-if="$ctrl.readyToAdd"
+	  ng-model="$ctrl.myForm"
+	  ng-submit="$ctrl.addPerson($ctrl.user)"
+	  id="validationForm"
+	  name="form"
+	  class="css-form">
+
+	<div class="form-group col-span-12">
+
+		<div class="form-group">
+			<input type="text" class="form-control form-add" name="firstName" ng-model="$ctrl.user.firstName" placeholder="First name" required pattern="^[A-Z][A-Za-z]+$">
+			<div ng-show="form.$submitted || form.firstName.$touched">
+	      		<div class="alert alert-danger" ng-show="form.firstName.$error.required">Tell us your first name.</div>
+	      		<div class="alert alert-warning" ng-show="form.firstName.$error.pattern">This is not a valid first name.</div>
+	    	</div>
+	    </div>
+
+		<div class="form-group">
+			<input type="text" class="form-control form-add" name="lastName" ng-model="$ctrl.user.lastName" placeholder="Last name" required pattern="^[A-Z][A-Za-z]+$">
+			<div ng-show="form.$submitted || form.lastName.$touched">
+	      		<div class="alert alert-danger" ng-show="form.lastName.$error.required">Tell us your last name.</div>
+	      		<div class="alert alert-warning" ng-show="form.lastName.$error.pattern">This is not a valid last name.</div>
+	      	</div>
+	    </div>
+
+		<div class="form-group">
+			<input type="number" class="form-control form-add" name="age" ng-model="$ctrl.user.age" placeholder="Age" min="1" max="152" required integer>
+				<div ng-show="form.$submitted || form.age.$touched">
+		      		<div class="alert alert-danger" ng-show="form.age.$error.required">How old are you?</div>
+		      		<div class="alert alert-warning" ng-show="form.age.$error.number">(age should be numeric)</div>
+		      		<div class="alert alert-warning" ng-show="form.age.$error.min || form.age.$error.max">Are you {{form.age.$viewValue}} years old?</div>
+	    	</div>
+	    </div>
+
+		<div class="form-group">
+			<div class="funkyradio" ng-model="$ctrl.user.sex" name="sex" required>
+	            <div class="funkyradio-default">
+	            	<input type="radio" value="male" ng-model="$ctrl.user.sex" id="radiomale">
+	            	<label for="radiomale">Male</label>
+	            </div>
+
+	            <div class="funkyradio-default">
+	            	<input type="radio" value="female" ng-model="$ctrl.user.sex" id="radiofemale">
+	            	<label for="radiofemale">Female</label>
+	            </div>
+				<div ng-show="form.$submitted || form.sex.$touched">
+			    	<div class="alert alert-danger" ng-show="form.sex.$error.required">Who are you?</div>
+			    </div>
+	        </div>
+
+	    </div>
+
+		<div class="form-group">
+			<input type="email" class="form-control form-add" name="email" ng-model="$ctrl.user.email" placeholder="Email" required>
+			<div ng-show="form.$submitted || form.email.$touched">
+	     		<div class="alert alert-danger" ng-show="form.email.$error.required">What is your email?</div>
+	      		<div class="alert alert-warning" ng-show="form.email.$error.email">This is not a valid email.</div>
+	    	</div>
+	    </div>
+
+	</div>
+
+	<button type="submit"
+			class="btn btn-default">Add &emsp; <!-- $ctrl.addPerson(user) -->
+				<span class="glyphicon glyphicon-plus"></span>
+	</button>
+
+	<button type="button"
+			class="btn btn-danger pull-right"
+			ng-click="$ctrl.clearForm(form); form.$setUntouched(); form.$submitted = null;">Clear &emsp;
+							<span class="glyphicon glyphicon-remove"></span>
+	</button>
+
+</form>
+
+
+
+<hr>
+<person-details ng-show="$ctrl.personInfo" person-info="$ctrl.personInfo" on-close="$ctrl.personInfo = null"></person-details>
