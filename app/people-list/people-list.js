@@ -18,11 +18,11 @@ angular.module('peopleList')
             sex: '',
             loremIpsum: ''
           },
-          personInfo: null,
-          addPerson: addPerson,
-          clearForm: clearForm,
+          //personInfo: null,
+          //addPerson: addPerson,
+          //clearForm: clearForm,
           $onInit: $onInit,
-          registerPerson: registerPerson,
+          //registerPerson: registerPerson,
           readyToAdd: false
         });
 
@@ -36,49 +36,49 @@ angular.module('peopleList')
            });
         }
 
-        function registerPerson() {
-          self.readyToAdd = !self.readyToAdd;
-        }
+        // function registerPerson() {
+        //   self.readyToAdd = !self.readyToAdd;
+        // }
 
-        function addPerson(newUser) {
-          if (!isValid(newUser)) {
-             return;
-          }
+        // function addPerson(newUser) {
+        //   if (!isValid(newUser)) {
+        //      return;
+        //   }
 
-          self.user = {
-            firstName: newUser.firstName,
-            lastName: newUser.lastName,
-            age: newUser.age,
-            email: newUser.email,
-            sex: newUser.sex,
-            loremIpsum: 'My id is: ' + Date.now()};
+        //   self.user = {
+        //     firstName: newUser.firstName,
+        //     lastName: newUser.lastName,
+        //     age: newUser.age,
+        //     email: newUser.email,
+        //     sex: newUser.sex,
+        //     loremIpsum: 'My id is: ' + Date.now()};
 
-          if (self.user.age < 18) {
-            self.children.push(self.user);
-          } else {
-            self.adults.push(self.user);
-          }
+        //   if (self.user.age < 18) {
+        //     self.children.push(self.user);
+        //   } else {
+        //     self.adults.push(self.user);
+        //   }
 
-          //self.form.reset();
-          self.readyToAdd = !self.readyToAdd;
+        //   //self.form.reset();
 
-          self.user = {};
-          // self.readyToAdd = true;
+        //   self.user = {};
+        //   // self.readyToAdd = true;
 
-          function isValid(user) {
-            if (!user.firstName || !user.lastName || !user.age || !user.email || !user.sex) {
-              return false;
-            }
+        //   function isValid(user) {
+        //     if (!user.firstName || !user.lastName || !user.age || !user.email || !user.sex) {
+        //       return false;
+        //     }
 
-            return true;
-          }
-        }
+        //     return true;
+        //   }
+        // }
 
-        // TODO: Findout how to clear form
-        function clearForm(form){
-          console.log(form);
-          document.querySelector('#validationForm').reset();
-        }
+        // // TODO: Findout how to clear form
+        // function clearForm(form){
+        //   console.log(form, self.user);
+        //   self.user = {};
+        //   document.querySelector('#validationForm').reset();
+        // }
       }
     ]
   });
